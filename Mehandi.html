@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehandi Gallery</title>
+    <link rel="icon" type="image/icon" href="favicon.ico" />
+</head>
+<body>
+    <h1>Puja ❤️ Piyush – Mehandi Gallery</h1>
+    <a href="index.html">← Back to Home</a>  <!-- Link back to first page -->
+
+    <!-- Styling -->
+    <style>
+        *{
+            margin: 0;
+        }
+        body {
+            text-align: center;
+            background-color: #f8f8f8;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        a {
+            display: inline-block;
+            margin-bottom: 20px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #007BFF;
+        }
+
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .gallery-container img, .gallery-container video {
+            width: auto; /* Maintain aspect ratio */
+            height: 500px; /* Set same height for all images & video */
+            object-fit: cover; /* Prevent cutting while keeping focus */
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+    
+    <!-- Add wedding photos here -->
+    <div class="gallery-container">
+        <img src="img/Mehandi/one_optimized_650.jpg"/>
+        <img src="img/Mehandi/1_1_optimized_650.jpg"/>
+        <img src="img/Mehandi/2_1_optimized_650.jpg"/>
+        <img src="img/Mehandi/3_1_optimized_650.jpg"/>
+        <img src="img/Mehandi/4_1_optimized_650.jpg"/>
+        <img src="img/Mehandi/4_1_optimized_650.jpg"/>
+        <img src="img/Mehandi/5_1_optimized_650.jpg"/>
+        <img src="img/Mehandi/6_1_optimized_650.jpg"/>
+        <img src="img/Mehandi/7_1_optimized_650.jpg"/>
+        <img src="img/Mehandi/8_1_optimized_650.jpg"/>
+        <img src="img/Mehandi/9_1_optimized_650.jpg"/>
+        <img src="img/Mehandi/10_1_optimized_650.jpg"/>
+        
+    </div>
+    
+
+<!-- unable screenshot and save -->
+
+    <script>
+        // Disable Right Click (Prevents "Save Image As")
+        document.addEventListener("contextmenu", function (event) {
+            event.preventDefault();
+        });
+    
+        // Disable Screenshot using PrintScreen Key
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "PrintScreen") {
+                alert("Screenshots are not allowed!");
+                event.preventDefault();
+            }
+        });
+    
+        // Prevent Dragging of Images
+        document.addEventListener("dragstart", function (event) {
+            event.preventDefault();
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aastayam Gallery</title>
+    <link rel="icon" type="image/icon" href="favicon.ico" />
+</head>
+<body>
+    <h1>Puja ❤️ Piyush – Aastayam Gallery</h1>
+    <a href="index.html">← Back to Home</a>  <!-- Link back to first page -->
+
+    <!-- Styling -->
+    <style>
+        body {
+            text-align: center;
+            background-color: #f8f8f8;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        a {
+            display: inline-block;
+            margin-bottom: 20px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #007BFF;
+        }
+
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .gallery-container img, .gallery-container video {
+            width: auto; /* Maintain aspect ratio */
+            height: 550px; /* Set same height for all images & video */
+            object-fit: cover; /* Prevent cutting while keeping focus */
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+    
+    <!-- Add wedding photos here -->
+    <div class="gallery-container">
+        <img src="img/Aasthazam/WhatsApp Image 2025-02-06 at 8.35.54 PM.jpeg"/>
+        <img src="img/Aasthazam/DSC_5565.jpg"/>
+        <img src="img/Aasthazam/DSC_5597.jpg"/>
+        <img src="img/Aasthazam/DSC_5612.jpg"/>
+        <img src="img/Aasthazam/DSC_5615.jpg"/>
+        <img src="img/Aasthazam/DSC_5618.jpg"/>
+        <img src="img/Aasthazam/DSC_5620.jpg"/>
+        <img src="img/Aasthazam/DSC_5623.jpg"/>
+        <img src="img/Aasthazam/DSC_5625.jpg"/>
+        <img src="img/Aasthazam/me.jpeg"/>
+        <img src="img/Aasthazam/babu.jpeg"/>
+        <img src="img/Aasthazam/ms.jpeg"/>
+        <video width="520" height="400" controls>
+            <source src="img/Aasthazam/WhatsApp Video 2025-02-06 at 8.36.06 PM.mp4" type="video/mp4" />
+        </video>
+    </div>
+    
+
+    <script>
+        // Disable Right Click (Prevents "Save Image As")
+        document.addEventListener("contextmenu", function (event) {
+            event.preventDefault();
+        });
+    
+        // Disable Screenshot using PrintScreen Key
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "PrintScreen") {
+                alert("Screenshots are not allowed!");
+                event.preventDefault();
+            }
+        });
+    
+        // Prevent Dragging of Images
+        document.addEventListener("dragstart", function (event) {
+            event.preventDefault();
+        });
+    </script>
+    
+</body>
+</html>
